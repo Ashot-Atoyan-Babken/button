@@ -1,0 +1,122 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background: #000;
+}
+
+.button {
+   cursor: pointer;
+   text-transform: uppercase;
+   color: #ffffff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 2px solid #ffffff;
+   width: 200px;
+   height: 75px;
+   margin: 15vh auto 0;
+   position: relative;
+   letter-spacing: 2px;
+   transition: 0.8s;
+
+}
+
+
+
+.wrapper {
+   width: 500px;
+   height: 300px;
+   margin: 25vh auto;
+   text-align: center;
+}
+
+.conteiner {
+   margin: 0 auto;
+}
+
+.sqr_1 {
+   position: absolute;
+   width: 15px;
+   height: 15px;
+   background-color: #000;
+   border: 2px solid #a0a0ff;
+
+   margin: -37% -100% 0px 0px;
+   transition: 0.8s;
+}
+
+.sqr_2 {
+   position: absolute;
+   width: 15px;
+   height: 15px;
+   background-color: #000;
+   border: 2px solid #a0a0ff;
+   margin: 37% 100% 0px 0px;
+   transition: 0.8s;
+}
+
+.sqr_3 {
+   position: absolute;
+   width: 15px;
+   height: 15px;
+   background-color: #fff;
+   margin: -37% 100% 0px 0px;
+   transition: 0.8s;
+}
+
+.sqr_4 {
+   position: absolute;
+   width: 15px;
+   height: 15px;
+   background-color: #fff;
+   margin: 37% -100% 0px 0px;
+   transition: 0.8s;
+}
+
+.button:hover {
+   border: 2px solid #a0a0ff;
+   letter-spacing: 10px;
+   color: #a0a0ff;
+   box-shadow: 0 0 5px #a0a0ff, 0 0 10px #a0a0ff, 0 0 20px #a0a0ff, 0 0 40px #a0a0ff, 0 0;
+}
+
+.button:hover .sqr_1 {
+   transform: rotate(-45deg);
+   margin: -37% 100% 0px 0px;
+   background-color: #a0a0ff;
+   background-color: #000;
+}
+
+.button:hover .sqr_2 {
+   transform: rotate(-45deg);
+   margin: 37% -100% 0px 0px;
+   background-color: #a0a0ff;
+   background-color: #000;
+
+}
+
+.sqr_3,
+.sqr_4 {
+   opacity: 0;
+}
+
+.button:hover .sqr_3 {
+   border: 2px solid #a0a0ff;
+   background-color: #a0a0ff;
+
+   opacity: 1;
+   transform: rotate(-45deg);
+   margin: -37% -100% 0px 0px;
+}
+
+.button:hover .sqr_4 {
+   opacity: 1;
+   border: 2px solid #a0a0ff;
+   background-color: #a0a0ff;
+
+   transform: rotate(-45deg);
+   margin: 37% 100% 0px 0px;
+}
